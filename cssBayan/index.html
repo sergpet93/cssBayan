@@ -5,10 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Bayan</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="normalize.css">
 </head>
 <body>
-    
-</body>
+    <header class="header">
+        <div class="wrapper header__wrapper">
+            <h1>CSS Bayan</h1>
+        </div>
+    </header>
+    <main class="main">
+        <div class="wrapper">
+            <ul class="links_mems">
+                <li class="link_mem">
+                    <label for="first">When after the course I got a badge for creating a meme</label>
+                    <input type="radio" name="accordion" id="first_mem" checked>
+                    <div class="contener_icon_mem">
+                        <img class="icon" src="./img/first.jpg" alt="mem number one">
+                    </div>
+                </li>
+                <li class="link_mem">
+                    <label for="second">When I didn't have time to finish the project before the deadline</label>
+                    <input type="radio" name="accordion" id="second_mem" checked>
+                    <div class="contener_icon_mem">
+                        <img class="icon" src="./img/second.jpg" alt="mem number second">
+                    </div>
+                </li>
+                <li class="link_mem">
+                    <label for="three">Thoughts about some tests</label>
+                    <input type="radio" name="accordion" id="three_mem" checked>
+                    <div class="contener_icon_mem">
+                        <img class="icon" src="./img/three.jpg" alt="mem number three">
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </main>
+</body> 
 </html>
