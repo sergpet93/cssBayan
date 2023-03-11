@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Inter';
+    background: beige;
+}
+
+.wrapper {
+    width: 82rem;
+    margin: 5rem auto;
+}
+
+h1 {
+    font-size: 4rem;
+    font-style: normal;
+    line-height: 5rem;
+    font-weight: 700;
+} 
+
+ul {
+    padding: 0;
+    margin: 3rem auto;
+}
+
+li {
+    list-style-type: none;
+}
+
+.link_mem {
+    cursor: pointer;
+}
+
+.link_mem *{
+    color: rgb(68, 68, 194);
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.line {
+    opacity: 0.5;
+    border-bottom: 0.1rem solid rgb(110, 107, 107);
+} 
+
+.name_mem {
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 2rem;
+    font-style: normal;
+    line-height: 4.5rem;
+    font-weight: 400;
+}
+
+.icon_plus {
+    opacity: 0;
+    transform: rotate(45deg);
+    transition: 0.2s;
+}
+
+.contener_icon_mem {
+    height: 0;
+    width: 30rem;
+    margin: auto;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 0.6s ease-out;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"]:checked ~ .label .name_mem{
+    color:black;
+}
+
+input[type="radio"]:checked ~ .label .name_mem .icon_plus{
+    transform: rotate(90deg);
+}
+
+
+input[type="radio"]:checked ~ .label .contener_icon_mem {
+    opacity: 1;
+    height: 30rem;
+    padding: 2rem 0 3rem;
+} 
+
+@media (min-width: 821px){
+    .links_mems:hover .link_mem *{
+        color: black;
+    } 
+    .links_mems:hover .icon_plus {
+        opacity: 1;
+    } 
+    .link_mem:hover .contener_icon_mem{
+        opacity: 1;
+        height: 30rem;
+        padding: 2rem 0 3rem;
+    } 
+    .link_mem:hover .icon_plus{
+        opacity: 1;
+        transform: rotate(90deg);
+    } 
+}
+
+@media (max-width: 820px){
+    .wrapper {
+        width: 50rem;
+        margin: 3rem auto;
+    }
+    h1 {
+        font-size: 3rem;
+        line-height: 4rem;
+    } 
+    ul {
+        margin: 2rem auto;
+    }
+    .name_mem {
+        font-size: 1.5rem;
+        line-height: 3.5rem;
+    }
+}
+
+@media (max-width: 550px){
+    .wrapper {
+        width: 30rem;
+        margin: 2rem auto;
+    }
+
+    h1 {
+        font-size: 2rem;
+        line-height: 3rem;
+        font-weight: 400;
+    } 
+    .name_mem {
+        font-size: 1rem;
+        line-height: 2rem;
+        font-weight: 300;
+    }     
+    input[type="radio"]:checked ~ .contener_icon_mem {
+        padding: 1rem 0 2rem;
+    } 
+}
