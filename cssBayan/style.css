@@ -49,7 +49,7 @@ li {
     border-bottom: 0.1rem solid rgb(110, 107, 107);
 } 
 
-.label {
+.name_mem {
     padding: 1rem 0;
     display: flex;
     align-items: center;
@@ -79,16 +79,16 @@ input[type="radio"] {
     display: none;
 }
 
-input[type="radio"]:checked ~ .label{
+input[type="radio"]:checked ~ .label .name_mem{
     color:black;
 }
 
-input[type="radio"]:checked ~ .label .icon_plus{
+input[type="radio"]:checked ~ .label .name_mem .icon_plus{
     transform: rotate(90deg);
 }
 
 
-input[type="radio"]:checked ~ .contener_icon_mem {
+input[type="radio"]:checked ~ .label .contener_icon_mem {
     opacity: 1;
     height: 30rem;
     padding: 2rem 0 3rem;
@@ -124,7 +124,7 @@ input[type="radio"]:checked ~ .contener_icon_mem {
     ul {
         margin: 2rem auto;
     }
-    .label {
+    .name_mem {
         font-size: 1.5rem;
         line-height: 3.5rem;
     }
@@ -141,7 +141,7 @@ input[type="radio"]:checked ~ .contener_icon_mem {
         line-height: 3rem;
         font-weight: 400;
     } 
-    .label {
+    .name_mem {
         font-size: 1rem;
         line-height: 2rem;
         font-weight: 300;
