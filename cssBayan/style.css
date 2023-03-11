@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Inter';
+    background: beige;
+}
+
+.wrapper {
+    width: 100rem;
+    margin: auto;
+}
+
+h1 {
+    font-size: 4rem;
+    font-style: normal;
+    line-height: 5rem;
+    font-weight: 700;
+} 
+
+ul {
+    padding: 0;
+    margin: 3rem auto;
+}
+
+li {
+    list-style-type: none;
+}
+
+.link_mem *{
+    color: rgb(68, 68, 194);
+    transition: all 1s ease-in-out;
+    cursor: pointer;
+}
+
+.line {
+    border-bottom: 0.1rem solid rgb(110, 107, 107);
+} 
+
+.label {
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 2rem;
+    font-style: normal;
+    line-height: 2rem;
+    font-weight: 400;
+}
+
+.icon_plus {
+    transform: rotate(45deg);
+}
+
+.contener_icon_mem {
+    height: 0;
+    width: 30rem;
+    margin: 1rem auto;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 0.6s ease-out;
+}
+
+.label + input[type="radio"] {
+    display: none;
+}
+
+.label + input[type="radio"]:checked + .contener_icon_mem {
+    opacity: 1;
+    height: 30rem;
+}
